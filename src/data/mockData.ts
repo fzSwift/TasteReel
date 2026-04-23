@@ -1,0 +1,70 @@
+import { MenuItem, Restaurant } from "../types";
+
+export const mockRestaurants: Restaurant[] = [
+  {
+    id: "r1",
+    name: "Lagos Grill House",
+    cuisine: "African BBQ",
+    address: "12 Marina Road",
+    latitude: 6.4541,
+    longitude: 3.3947,
+    isRecommended: true,
+    weeklyVotes: 74,
+    likeCount: 128,
+    moderationStatus: "approved",
+    reportCount: 0,
+  },
+  {
+    id: "r2",
+    name: "Roma Bites",
+    cuisine: "Italian",
+    address: "44 Palm Street",
+    latitude: 6.4474,
+    longitude: 3.3903,
+    isRecommended: true,
+    weeklyVotes: 69,
+    likeCount: 96,
+    moderationStatus: "approved",
+    reportCount: 0,
+  },
+  {
+    id: "r3",
+    name: "Tokyo Bowl",
+    cuisine: "Japanese",
+    address: "7 Glover Close",
+    latitude: 6.4418,
+    longitude: 3.4132,
+    isRecommended: false,
+    weeklyVotes: 31,
+    likeCount: 54,
+    moderationStatus: "approved",
+    reportCount: 0,
+  },
+];
+
+export const mockMenuItems: MenuItem[] = [
+  {
+    id: "m1",
+    restaurantId: "r1",
+    title: "Smoky Chicken Platter",
+    description: "Charcoal grilled chicken with spicy house sauce.",
+    price: 18.5,
+    videoUrl: "https://cdn.coverr.co/videos/coverr-a-chef-cutting-carrots-1579/1080p.mp4",
+  },
+  {
+    id: "m2",
+    restaurantId: "r2",
+    title: "Truffle Pasta",
+    description: "Creamy truffle linguine with parmesan.",
+    price: 22,
+    videoUrl: "https://cdn.coverr.co/videos/coverr-pasta-with-sauce-1574/1080p.mp4",
+  },
+  {
+    id: "m3",
+    restaurantId: "r3",
+    title: "Salmon Rice Bowl",
+    description: "Seared salmon on sushi rice with sesame dressing.",
+    price: 20,
+    videoUrl: "https://cdn.coverr.co/videos/coverr-serving-a-bowl-of-food-7470/1080p.mp4",
+  },
+];
